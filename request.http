@@ -1,0 +1,32 @@
+POST http://localhost:4002/products
+content-Type: application/json
+
+{
+    "name": "Lápis Vermelho",
+    "price": 3
+}
+
+###
+
+GET http://localhost:4002/products
+
+
+###
+
+GET http://localhost:4002/products/d7f8f641-4efa-4730-bb79-503b8df749fe
+
+
+###
+
+PUT http://localhost:4002/products/d7f8f641-4efa-4730-bb79-503b8df749fe
+content-Type: application/json
+
+{   
+    "name": "Bolsinha de lapis",
+    "price": 5
+}
+
+###
+
+DELETE http://localhost:4002/products/d7f8f641-4efa-4730-bb79-503b8df749fe
+
